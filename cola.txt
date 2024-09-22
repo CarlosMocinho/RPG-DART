@@ -1,0 +1,17 @@
+Personagem jogador = Personagem('Carlos', 10, 'Monge', 'manoplas', 2, 3);
+  Monstro monstro = Monstro('Goblin', 2, 5, 15);
+
+
+  // Lógica de ataque do monstro, por exemplo:
+    int dano = (ataque - personagem.defesa);
+    personagem.vida -= dano;
+
+
+    static void AtaqueMonstro(Personagem personagem, int ataqueMonstro) {
+    // ...
+  }
+
+  // Chamando o método em outro lugar:
+  Monstro monstro = Monstro('Goblin', 10, 5, 20);
+  monstro.AtaqueMonstro(personagem, monstro.ataque);
+}
